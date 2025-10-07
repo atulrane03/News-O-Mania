@@ -1,0 +1,129 @@
+.card {
+  border: none;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.source-badge {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  z-index: 1;
+}
+
+.source-badge .badge {
+  font-size: 12px;
+  padding: 3px 5px;
+}
+
+.title-desc-div {
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.description-text {
+  font-size: 16px;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.arrows {
+  display: flex;
+}
+
+.like,
+.dislike {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.like svg,
+.dislike svg {
+  font-size: 24px;
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.like.active svg,
+.dislike.active svg {
+  color: #000;
+}
+
+.like.active .count,
+.dislike.active .count {
+  color: #000;
+}
+
+.btn-dark {
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-dark:hover {
+  background-color: #333;
+  border-color: #333;
+}
+
+/* New styles for Like and Dislike buttons */
+
+.like.active svg {
+  color: #007bff;
+}
+
+.dislike.active svg {
+  color: #dc3545;
+}
+
+.like .count,
+.dislike .count {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+/* Styles for Share dropdown */
+
+.share {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.share svg {
+  font-size: 24px;
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.share:hover svg {
+  color: #007bff;
+}
